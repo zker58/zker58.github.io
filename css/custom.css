@@ -1,0 +1,54 @@
+/* 首页头图区域加遮罩，避免文字看不清 */
+#page-header::before {
+  background-color: rgba(0, 0, 0, 0.28) !important;
+}
+
+/* 首页标题整体容器 */
+#site-info {
+  padding: 24px 36px;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* 主标题 */
+#site-title {
+  font-size: clamp(2.2rem, 5vw, 4.4rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em;
+  color: #ffffff !important;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.12),
+    0 4px 14px rgba(0, 0, 0, 0.48),
+    0 1px 3px rgba(0, 0, 0, 0.72);
+}
+
+/* 副标题 */
+#site-subtitle {
+  margin-top: 14px;
+  font-size: clamp(1rem, 2vw, 1.35rem) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.45),
+    0 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+/* 向下箭头 */
+#scroll-down .scroll-down-effects {
+  color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 顶部导航栏稍微通透一点 */
+#page-header.nav-fixed #nav {
+  background: rgba(20, 20, 28, 0.55) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 导航栏文字更清晰 */
+#nav * {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
