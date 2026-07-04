@@ -52,3 +52,26 @@
 #nav * {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
+#nav {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  background: rgba(20, 24, 32, 0.35) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#menus,
+#nav .menus_items {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#nav a,
+#nav .site-page,
+#nav #site-name {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55) !important;
+}
