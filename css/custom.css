@@ -75,3 +75,56 @@
   color: #fff !important;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55) !important;
 }
+
+
+/* 友链页卡片美化 */
+#article-container .flink .flink-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  padding: 10px 0 24px;
+}
+
+#article-container .flink .flink-list > .flink-list-item {
+  width: auto !important;
+  height: 96px;
+  margin: 0 !important;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 24px rgba(31, 45, 61, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#article-container .flink .flink-list > .flink-list-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(31, 45, 61, 0.14);
+}
+
+#article-container .flink .flink-list > .flink-list-item a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+}
+
+#article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+#article-container .flink .flink-list > .flink-list-item a .flink-item-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+#article-container .flink .flink-list > .flink-list-item a .flink-item-desc {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.45;
+  white-space: normal;
+}
